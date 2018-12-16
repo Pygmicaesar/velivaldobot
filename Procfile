@@ -1,1 +1,1 @@
-web: python valdo.py
+worker: python valdo.py
