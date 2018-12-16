@@ -7,7 +7,7 @@ import urllib
 with open("data.json", "r") as read_file:
     data = json.load(read_file)
 
-TOKEN = data.get("token", "none")
+TOKEN = "773330747:AAEEbN_K8J6CDzeEINANG4UBdsHGlkL0qDg"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 TEXT = data.get("text", "none")
 TEXTOE = data.get("textoe", "none")
