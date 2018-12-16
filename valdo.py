@@ -6,11 +6,11 @@ import urllib
 
 with open("data.json", "r") as read_file:
     data = json.load(read_file)
-
-TOKEN = "773330747:AAEEbN_K8J6CDzeEINANG4UBdsHGlkL0qDg"
+    
+TOKEN = data.get("token", "none")
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
-TEXT = "Päivän pakollinen kääpiöviesti"
-TEXTOE = "Oeoeoee"
+TEXT = data.get("text", "none")
+TEXTOE = data.get("textoe", "none")
 
 def get_url(url):
     response = requests.get(url)
